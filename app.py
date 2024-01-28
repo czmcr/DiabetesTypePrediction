@@ -6,10 +6,10 @@ from model.feature_extraction import extract_features
 from model.load_models import load_model, make_prediction
 
 # Set up the title of the web app
-st.title('Diabetes Prediction App')
+st.title('Diabetes Prediction')
 
 # Model selection
-MODEL_DIR = 'saved_models/'
+MODEL_DIR = 'C:/Users/User/Documents/uni/FYP/git/DiabetesTypePrediction/saved_models'
 model_files = os.listdir(MODEL_DIR)
 model_choices = [filename for filename in model_files if filename.endswith('.joblib')]
 selected_model_name = st.selectbox('Select a model for prediction:', model_choices)
